@@ -1,50 +1,38 @@
 //색상 정의
 export const theme = {
-    colors: {
-        //Primary Colors
-        primary: "#6673FF", // 메인 색상
-        secondary: "#4552DD", // 서브 색상
-
-        //Grayscale - Warm Grays
-        black: "#2D2D2D",
-        warmGray1: "#4D4D55",
-        warmGray2: "#828282",
-        warmGray3: "#CACCD5",
-        white: "#FFFFFF",
-
-        //Grayscale - Cool Grays
-        coolGray1: "#585868",
-        coolGray2: "#68687C",
-        coolGray3: "#7A7FA5",
-        coolGray4: "#9DA0C0",
-        coolGray5: "#A8A8BC",
-        coolGray6: "#D4D6E9",
-        coolGray7: "#E3E3FF",
-        coolGray8: "#E8E8F1",
-        coolGray9: "#EFEFF5",
-        coolGray10: "#F5F5FA",
-        coolGray11: "#F7F7FF",
-
-        // Category Colors -> 카테고리 지정 색상
-        category: {
-            red: "#FFD8DA",
-            redText: "#FF8080",
-            redTag: "#FFE4E5",
-
-            yellow: "#FFE8C9",
-            yellowText: "#FEB44F",
-            yellowTag: "#FFEACE",
-
-            green: "#D4F3DD",
-            greenText: "#88D49D",
-            greenTag: "#E0F5E6",
-
-            blue: "#D9E2FF",
-            blueText: "#86A1F9",
-            blueTag: "#E5EBFF",
-
-            purple: "#F0E4FF",
-            purpleText: "#BA91EE",
-        },
+  colors: {
+    //Primary Colors
+    primary: {
+      primary98: "#E6FFF4",
+      primary95: "#B9FFE7",
+      primary90: "#98F4D6",
+      primary80: "#5FDBB9",
+      primary70: "#3EBF9E",
+      primary60: "#0DA484",
+      primary50: "#00876C",
+      primary40: "#006B56",
     },
+    //Neutral Colors
+    neutral: {
+      neutral98: "#F8FAF7",
+      neutral95: "#EFF1EE",
+      neutral90: "#E1E3E0",
+      neutral80: "#C4C7C4",
+      neutral70: "#A9ACA9",
+      neutral60: "#8E918F",
+      neutral50: "#747875",
+      neutral40: "#5C5F5D",
+    },
+    //Neutral Varient Colors
+    neutralVarient: {
+      neutralVarient98: "#F2FCF6",
+      neutralVarient95: "#E9F3ED",
+      neutralVarient90: "#DBE5DF",
+      neutralVarient80: "#BFC9C3",
+      neutralVarient70: "#A4ADA8",
+      neutralVarient60: "#89938E",
+      neutralVarient50: "#6F7975",
+      neutralVarient40: "#57605C",
+    },
+  },
 };
