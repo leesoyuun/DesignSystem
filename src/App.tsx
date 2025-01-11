@@ -7,7 +7,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Main/>
+      <Main />
     </ThemeProvider>
   );
 };

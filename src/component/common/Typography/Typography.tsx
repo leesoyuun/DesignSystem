@@ -3,6 +3,7 @@ import { jsx } from "react/jsx-runtime";
 
 import * as S from "./style";
 import { theme } from "../../../styles/theme";
+import { Color } from "../../../type/color";
 
 type TypographTypoType =
   | "H5"
@@ -14,12 +15,6 @@ type TypographTypoType =
   | "Body2"
   | "Caption"
   | "Overline";
-
-type ColorType =
-  | keyof typeof theme.colors
-  | keyof (typeof theme.colors)["primary"]
-  | keyof (typeof theme.colors)["neutral"]
-  | keyof (typeof theme.colors)["neutralVarient"];
 
 const TypoMap = {
   H5: S.H5,
@@ -38,19 +33,13 @@ const Typography = ({
   typoSize,
   children,
 }: {
-  color?: ColorType;
+  color?: Color;
   typoSize: TypographTypoType;
   children: ReactNode;
 }) => {
   const Typo = TypoMap[typoSize];
 
-  const Color = color
-    ? theme.colors.primary[color as keyof typeof theme.colors.primary] ||
-      theme.colors.neutral[color as keyof typeof theme.colors.neutral] ||
-      theme.colors.neutralVarient[
-        color as keyof typeof theme.colors.neutralVarient
-      ]
-    : theme.colors.primary.primary50;
+  const Color = color ? theme[color as keyof typeof theme] : theme.primary50;
 
   return jsx(Typo, { style: { color: Color }, children });
 };
